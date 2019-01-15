@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phoneBook</title>
+
+    <!-- Bootstrap styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <!-- JavaScript code -->
+    <script src="static/js/script.js"></script>
+
+</head>
+<body>
+<div class="general-container">
+    <div class="container top-container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="title">Телефонный справочник</h1>
+                <div>
+                    <form class="form-inline text-center">
+                        <div class="form-group">
+                            <label>Имя</label>
+                            <input type="text" id="ContactName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="text" id="ContactPhone" class="form-control">
+                        </div>
+                        <button type="button" id="Add" onclick="AddOnClick()"
+                                class="btn btn-primary btn-lg btn-orange">Добавить
+                        </button>
+                        <button type="button" id="Find" onclick="FindOnClick()"
+                                class="btn btn-primary btn-lg btn-orange">Найти
+                        </button>
+                        <div>
+                            <label id="Result"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
